@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav--container {
+  display: flex;
+  padding: 20px 36px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(255, 217, 0, 0.79);
+  background-color: #fff;
+}
+
+.nav--logo{
+  height: 100px;
+  margin-right: 25px;
+}
+
+.nav--text{
+  color: rgb(11, 127, 171);
+  font-size: 24px;
+}
+
+.cards-list {
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+  background-color: #fff;
+  box-shadow: 0px 2.98256px 7.4564px rgba(255, 217, 0, 0.79);
+}
+
+section {
+  padding: 20px;
+}
+
+.hero {
+  margin-top: 5px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(11, 127, 171);
+  box-shadow: 0px 2.98256px 7.4564px rgba(255, 217, 0, 0.79);
+}
+
+.hero--image{
+  height: 50px;
+  margin-right: 5px;
+}
+
+.hero--text {
+  margin-top: 0;
+  margin-left: 15px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.hero--text1 {
+  margin-left: 15px;
+}
+
+.hero--text2 {
+  margin-right: 15px;
+}
+
+.hero--flexbox{
+  display: flex;
+  align-items: center; 
+}
+
+.hero--button{
+  padding: 10px 20px;
+  margin-left: 20px;
+}
+
+.card {
+  width: 400px;
+  height: 425px;
+  font-size: 12px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: rgb(11, 127, 171);
+  border-radius: 9px;
+  transition: 0.2s ease-in-out;
+}
+
+.card:hover{
+  cursor: pointer;
+  transform: scale(1.04);
+  box-shadow: 3px 5px 5px rgb(11, 127, 171);
+  transition: 0.2s ease-in-out;
+}
+
+.card--image {
+  width: 100%;
+  border-radius: 9px;
+}
+
+.card--title {
+  margin: 10px 10px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.card--organizer{
+  margin: 10px 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.card--flexbox {
+  display: flex;
+  align-items: center; 
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.card--location {
+  margin-left: 10px;
+  
+}
+
+@media (max-width: 768px) {
+  .nav--container {
+    padding: 10px;
+  }
+
+  .nav--text {
+    font-size: 18px;
+  }
+
+  .cards-list {
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .card--title,
+  .card--organizer,
+  .card--flexbox {
+    font-size: 18px;
+  }
+
+  .card {
+    max-width: 100%;
+    margin: 0 10px 20px;
+  }
+}
